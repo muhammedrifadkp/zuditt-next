@@ -1,0 +1,265 @@
+.testimonials {
+    padding: 8rem 2rem;
+    background: #fff;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #00a67e;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+  
+  .videoSection {
+    position: relative;
+    margin-bottom: 6rem;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .videoThumbnailWrapper {
+    position: relative;
+  }
+  
+  .videoThumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: #00a67e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .playButton:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .playIcon {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5px;
+  }
+  
+  .videoIframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+  }
+  
+  .testimonialAvatars {
+    position: absolute;
+    top: -15%;
+    width: 100%;
+  }
+  
+  .avatar {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Adjust Avatar Positions */
+  .avatar1 {
+    top: 0;
+    left: 10%;
+  }
+  
+  .avatar2 {
+    top: 20%;
+    right: 15%;
+  }
+  
+  .avatar3 {
+    bottom: 10%;
+    left: 5%;
+  }
+  
+  .avatar4 {
+    bottom: 15%;
+    right: 10%;
+  }
+  
+  .praiseTitle {
+    font-size: 2rem;
+    color: #00a67e;
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  /* Testimonial Cards Section */
+  .testimonialSlider {
+    margin-top: 4rem;
+  }
+  
+  /* Stats Section */
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+  }
+  
+  .statItem {
+    text-align: center;
+  }
+  
+  .statValue {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00a67e;
+  }
+  
+  .statLabel {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Updated Styling for Testimonial Avatars (WORDS OF PRAISE) */
+  .testimonialCard {
+    position: relative;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonialCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonialImage {
+    width: 100%;
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonialImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonialText {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .stars {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .star {
+    color: #f39c12;
+    font-size: 1.5rem;
+    margin-right: 2px;
+  }
+  
+  .testimonialName {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Avatar Styling: Ensuring all avatars have the same size and position */
+  .testimonialAvatars {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Advanced styling: Adding hover effects and transitions for images */
+  .testimonialAvatars .avatar1 {
+    transform: translateY(10px);
+  }
+  
+  .testimonialAvatars .avatar2 {
+    transform: translateY(-10px);
+  }
+  
+  .testimonialAvatars .avatar3 {
+    transform: translateY(10px);
+  }
+  
+  .testimonialAvatars .avatar4 {
+    transform: translateY(-10px);
+  }
+  
+
+  @media (max-width: 1024px) {
+
+  }
+  
+  @media (max-width: 650px) {
+    .testimonialAvatars{
+      display: none;
+    }
+  }

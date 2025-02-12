@@ -1,0 +1,5 @@
+.homepageContainer {
+    overflow: hidden;  /* ✅ Prevents scrolling */
+    width: 100%;       /* Ensures full width */
+  }
+  

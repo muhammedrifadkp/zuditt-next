@@ -1,0 +1,116 @@
+.whyChooseUs {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/bg-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .content {
+    flex: 1;
+    background: rgba(0, 32, 22, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .feature {
+    color: white;
+    margin-bottom: 3rem;
+  }
+  
+  .feature:last-child {
+    margin-bottom: 0;
+  }
+  
+  .featureTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #00a67e;
+  }
+  
+  .featureText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .robotImage {
+    max-width: 600px;
+    margin-top: 2rem;
+    align-self: flex-end;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      width: 10px;
+    }
+    .robotImage {
+      align-self: center;
+      position: relative;
+      z-index: 1;
+      right: 10%;
+      scale: 1.5;
+      top: -100px;
+    }
+    .content{
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .whyChooseUs {
+      padding: 4rem 1rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .featureTitle {
+      font-size: 1.5rem;
+    }
+  
+    .robotImage {
+      max-width: 300px;
+    }
+  }

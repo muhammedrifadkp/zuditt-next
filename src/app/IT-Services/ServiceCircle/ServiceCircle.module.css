@@ -1,0 +1,145 @@
+/* Base circle styles */
+.circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(197, 195, 195);
+  background: linear-gradient(145deg, #189D6D 20%, rgb(1, 7, 4) 100%, #266446 80%);
+  border-radius: 50%;
+  padding: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  animation: circleUp 4s ease-out forwards;
+  font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+}
+
+/* Circle positions and sizes */
+.topLeft {
+  top: 15%;
+  left: 10%;
+  width: clamp(4rem, 8vw, 6.5rem);
+  height: clamp(4rem, 8vw, 6.5rem);
+  animation-delay: 3.2s;
+}
+
+.topRight {
+  top: 8%;
+  right: 10%;
+  width: clamp(8rem, 15vw, 15rem);
+  height: clamp(8rem, 15vw, 15rem);
+  font-size: clamp(0.8rem, 2vw, 1.7rem);
+  animation-delay: 3.4s;
+}
+
+.center {
+  top: 30%;
+  left: 40%;
+  width: clamp(6rem, 12vw, 9rem);
+  height: clamp(6rem, 12vw, 9rem);
+  transform: translate(-50%, -50%);
+  animation-delay: 3.6s;
+}
+
+.bottomLeft {
+  bottom: 35%;
+  left: 18%;
+  width: clamp(7rem, 13vw, 11rem);
+  height: clamp(7rem, 13vw, 11rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.3rem);
+  animation-delay: 3.8s;
+}
+
+.bottomRight {
+  bottom: 5%;
+  right: 40%;
+  width: clamp(4rem, 8vw, 6rem);
+  height: clamp(4rem, 8vw, 6rem);
+  animation-delay: 4s;
+}
+
+.bottomCenter {
+  bottom: 35%;
+  left: 65%;
+  width: clamp(3rem, 6vw, 4rem);
+  height: clamp(3rem, 6vw, 4rem);
+  font-size: clamp(0.4rem, 1vw, 0.6rem);
+  animation-delay: 4.2s;
+}
+
+.centerLeft {
+  top: 70%;
+  left: 33%;
+  width: clamp(3.5rem, 7vw, 5rem);
+  height: clamp(3.5rem, 7vw, 5rem);
+  font-size: clamp(0.5rem, 1.2vw, 0.8rem);
+  animation-delay: 4.4s;
+}
+
+/* Small decorative circles */
+.centerRight2, .bottomRight2, .bottomLeft2 {
+  width: clamp(0.3rem, 1vw, 0.5rem);
+  height: clamp(0.3rem, 1vw, 0.5rem);
+}
+
+.centerRight2 {
+  top: 50%;
+  right: 43%;
+  animation-delay: 4.4s;
+}
+
+.bottomRight2 {
+  bottom: 12%;
+  right: 23%;
+  animation-delay: 4.6s;
+}
+
+.bottomLeft2 {
+  bottom: 5%;
+  left: 27%;
+  animation-delay: 4.8s;
+}
+
+@keyframes circleUp {
+  0% {
+    opacity: 1;
+    transform: translateY(40rem) scale(0);
+  }
+  50% {
+    transform: translateY(-80px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .circle {
+    font-size: clamp(0.4rem, 1.2vw, 0.7rem);
+  }
+
+  .topRight {
+    font-size: clamp(0.6rem, 1.5vw, 1.1rem);
+  }
+
+  .bottomLeft {
+    font-size: clamp(0.5rem, 1.3vw, 0.8rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .circle {
+    font-size: clamp(0.3rem, 1vw, 0.5rem);
+  }
+
+  .topRight {
+    font-size: clamp(0.5rem, 1.2vw, 0.8rem);
+  }
+
+  .bottomLeft {
+    font-size: clamp(0.4rem, 1.1vw, 0.6rem);
+  }
+}

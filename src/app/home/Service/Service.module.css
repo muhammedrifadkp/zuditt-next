@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.service {
+    padding:0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: #00a67e;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* margin-bottom: 5%; */
+    position: relative;
+    top: 100px;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays in the background */
+  }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-image: url('/serviceHome/service.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 40rem;
+    min-width: 800px;
+}
+
+.content {
+    flex: 1;
+    margin-left: 3%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.word {
+    display: block;
+}
+
+.description {
+    /* margin-top: 80%; */
+    margin: 40px 10px 10px 10px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.click {
+    color: black;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+.arrowContainer {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #00a67e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.imageSection {
+    flex: 1;
+    position: relative;
+    max-width: 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.devices {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive for 1024px */
+@media (max-width: 1024px) {
+    
+
+    /* .content {
+        margin-left: 0;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-top: 20%;
+    }
+
+    .click {
+        margin-top: 10rem;
+    }
+
+    .imageSection {
+        max-width: 70%;
+    } */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .service {
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        top: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        min-height: 30rem;
+        min-width: unset;
+        max-width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        background-size: cover;
+        margin-top: 2rem;
+        background-image: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        position: relative;
+        top: 0;
+    }
+
+    .word {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+        margin: 1rem 0;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+        color: black;
+    }
+
+    .imageSection {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 1rem;
+        order: 2;  /* Set order to control flex item positioning */
+    }
+
+    .devices {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .click {
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+        order: 3;  /* Place after imageSection */
+    }
+
+    .arrowContainer {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}

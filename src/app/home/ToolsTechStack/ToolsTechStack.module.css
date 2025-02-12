@@ -1,0 +1,198 @@
+.toolsTechStack {
+  padding: 6rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+              url('../../../../public/tech-bg.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 2px;
+}
+
+.swiper {
+  padding: 2rem 1rem;
+  overflow: visible !important;
+}
+
+.toolCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  height: 200px;
+  backdrop-filter: blur(8px);
+}
+
+.toolCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.toolCard:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.toolName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Custom Swiper Pagination Styles */
+/* :global(.swiper-pagination) {
+  position: relative;
+  margin-top: 2rem;
+}
+
+:global(.swiper-pagination-bullet) {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+  width: 30px;
+  border-radius: 6px;
+} */
+
+/* Tablet Responsive (768px - 1024px) */
+@media (max-width: 1024px) {
+  .toolsTechStack {
+    padding: 5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .toolCard {
+    height: 180px;
+    padding: 1.5rem;
+  }
+
+  .iconWrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+
+  .toolName {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile Responsive (up to 767px) */
+@media (max-width: 767px) {
+  .toolsTechStack {
+    padding: 4rem 1rem;
+    min-height: 50vh;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    
+  }
+
+  .swiper {
+    padding: 1rem 0.5rem;
+  }
+
+  .toolCard {
+    height: 160px;
+    padding: 1.25rem;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .toolName {
+    font-size: 1.1rem;
+  }
+
+  /* :global(.swiper-pagination-bullet) {
+    width: 8px;
+    height: 8px;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    width: 20px;
+  } */
+}
+
+/* Small Mobile Devices (up to 375px) */
+@media (max-width: 375px) {
+  .toolsTechStack {
+    padding: 3rem 0.75rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .toolCard {
+    height: 140px;
+    padding: 1rem;
+  }
+
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .toolName {
+    font-size: 1rem;
+  }
+}

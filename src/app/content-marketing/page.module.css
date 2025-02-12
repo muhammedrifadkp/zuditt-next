@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.mainContainer{
+  font-family: 'Montserrat', sans-serif;
+  overflow:hidden;
+
+ }
+.webPage {
+  background: url('/ContentMarketing/banner image (2).webp') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
+/* Add keyframe animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card section animation */
+.cardSection {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s; /* Delay for a smooth entrance */
+}
+
+/* Card content animation */
+.cardContent {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Card image animation */
+.cardImage {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+/* Add an initial hidden state for the card section */
+.cardSection, .cardContent, .cardImage {
+  opacity: 0;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.pageTitle {
+  font-size: 4rem;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0 6rem;
+
+}
+
+.cardSection {
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cardContent, .cardImage {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 2rem;
+}
+
+.cardParagraph {
+  /* padding-top: 1rem; */
+  font-size: 1.3rem;
+  text-align: justify;
+  /* font-weight:600; */
+}
+
+
+
+
+
+.cardImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.webPage1 {
+  background: url('/ContentMarketing/center image (4).webp') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+}
+
+.technologyGrid {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem; /* Add consistent spacing between items */
+  flex-wrap: wrap; /* Wrap items to the next line if needed on smaller screens */
+
+}
+
+.technologyItem {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+  /* justify-content: space-evenly; */
+  width: 300px; /* Ensures all items have a consistent width */
+  box-shadow: offset-x offset-y blur-radius spread-radius color;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1), /* Shadow on top */
+  0px 4px 6px rgba(0, 0, 0, 0.1);  /* Shadow on bottom */
+    padding: 4rem; /* Adds some padding inside the box */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  /* text-align: justify; */
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Apply smooth transition to both properties */
+  cursor: pointer; /* Show pointer cursor to indicate interactivity */
+
+
+
+}
+
+.technologyItem:hover {
+  transform: translateY(-10px) scale(1.05) rotate(5deg); /* Scale and rotate on hover */
+  box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  filter: brightness(1.1); /* Slightly increase brightness on hover */
+
+}
+
+
+
+
+
+.cardSection2 {
+  display: flex;
+  gap: 5rem;
+  padding:5rem;
+  padding-top: 8rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardTitle2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.cardParagraph2 {
+  /* padding-top: 1rem; */
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.cardImage2 img {
+  /* width: 100%; */
+  /* max-width: 900px;
+  height: 600px; */
+  max-width: 700px;
+  height: 500px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.image {
+  flex: 0 0 300px;
+  margin-left: 2rem;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.containerTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.containerParagraph {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.cardSubtitle{
+  font-size: 2rem;
+}
+.backendList {
+  /* font-weight: bold; */
+  margin-bottom: -1rem;
+}
+.backendLists {
+  font-size: 1.4rem;
+}
+.webPage2 {
+  background: url('/ContentMarketing/footer iamge (2).webp') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -4rem;
+}
+
+
+
+
+/* .liItem {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+} */
+
+
+
+@media (max-width: 1350px) {
+  /* .webPage{
+    margin-top: 7rem;
+  } */
+  .pageTitle{
+    font-size: 3rem;
+    
+  }
+  .cardTitle2{
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    font-size: 1.1rem;
+  }
+
+  .cardSection {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10rem; */
+  }
+
+  .cardSection{
+    /* flex-direction: column; */
+  }
+  .backendLists {
+    font-size: 1.1rem;
+  }
+  .cardImage{
+    margin-top: -5rem;
+  }
+  
+  
+.cardParagraph2 {
+  /* padding-top: 1rem; */
+  /* font-size: 0.1rem;
+  text-align: justify; */
+}
+
+
+.cardSection2{
+  /* display: flex;
+  flex-direction: column; */
+}
+.cardImage2{
+  margin-top: -6rem;
+}
+.cardImage2 img{
+  max-width: 450px;
+  height: auto;
+}
+.cardContent2{
+  margin-top: -8rem;
+  
+}
+.webPage2{
+  /* margin-top: -1rem; */
+}
+
+.technologyGrid{
+  padding: 2rem;
+}
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+ 
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .cardSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .cardSection img{
+    margin-top: 10%;
+  }
+  .cardSection2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContent2{
+    padding-top: 1rem;
+   }
+  .content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    margin-left: 0;
+  }
+  .pageTitle{
+    font-size: 2rem;
+    
+  }
+  .cardImage2 img{
+    max-width: 900px;
+    height: 400px;
+  }
+  .paragraph {
+    font-size: 1rem;
+    padding: 0 1rem;
+
+  }
+  .section{
+    margin: 1rem;
+  }
+  
+.cardParagraph {
+  /* padding-top: 1rem; */
+  font-size: 1rem;
+  text-align: justify;
+  font-weight:600;
+}
+
+}
+
+@media (max-width: 768px) {
+ 
+  .technologyGrid,
+  .backendGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardSection2{
+    padding: 5rem 2rem;
+  }
+  .cardParagraph {
+    /* padding-top: 1rem; */
+    font-size: .7rem;
+    text-align: justify;
+    font-weight:600;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .technologyGrid,
+  .backendGrid {
+    grid-template-columns: 1fr;
+  }
+  .cardImage2 img{
+    max-width: 300px;
+    height: auto;
+  }
+  .technologyItem{
+    padding: 1rem;
+  }
+
+
+
+  
+}

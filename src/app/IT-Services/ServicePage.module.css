@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.servicePage {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  width: 70%;
+  margin: auto;
+  min-height: 60vh;
+  margin-top: min(12rem, 15vh);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: max(5vh, 2rem);
+  animation: expandBackground 4s ease-in-out forwards;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes expandBackground {
+  0% {
+    width: 70%;
+    min-height: 60vh;
+    margin-top: min(12rem, 15vh);
+  }
+  100% {
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.text {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3rem);
+  animation: fadeInBackground 3s ease-in-out forwards;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  top: max(15vh, 5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50%) scale(1.2);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.circles {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: showCircles 0.5s ease-in-out 3s forwards;
+  top: 25vh;
+  height: 75vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Base circle styles with responsive sizes */
+.circles :global(.circle) {
+  width: clamp(120px, 15vw, 200px);
+  height: clamp(120px, 15vw, 200px);
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+@keyframes showCircles {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tablet Breakpoint */
+@media screen and (max-width: 1024px) {
+  .circles :global(.circle) {
+    width: clamp(100px, 12vw, 180px);
+    height: clamp(100px, 12vw, 180px);
+    font-size: clamp(0.7rem, 1.1vw, 1rem);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .circles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    top: 15vh;
+    height: auto;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+
+  .circles :global(.circle) {
+    width: clamp(150px, 40vw, 200px);
+    height: clamp(150px, 40vw, 200px);
+    font-size: clamp(1.1rem, 3.5vw, 1.4rem); /* Increased font size */
+    margin: 0 auto;
+    padding: 1.2rem; /* Increased padding to accommodate larger text */
+  }
+
+  /* Reset all position classes for mobile */
+  .circles :global(.topLeft),
+  .circles :global(.topRight),
+  .circles :global(.center),
+  .circles :global(.bottomLeft),
+  .circles :global(.bottomRight),
+  .circles :global(.bottomCenter),
+  .circles :global(.centerLeft),
+  .circles :global(.centerRight2),
+  .circles :global(.bottomRight2),
+  .circles :global(.bottomLeft2) {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+    transform: none !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  .text {
+    top: 5vh;
+    font-size: clamp(1.8rem, 7vw, 2.8rem); /* Increased title font size */
+  }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+  .circles :global(.circle) {
+    width: clamp(130px, 45vw, 180px);
+    height: clamp(130px, 45vw, 180px);
+    font-size: clamp(1rem, 4vw, 1.3rem); /* Increased font size */
+    padding: 1rem;
+  }
+
+  .circles {
+    gap: 1rem;
+    top: 12vh;
+  }
+
+  .text {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+}
+
+/* Very Small Mobile Screens */
+@media screen and (max-width: 360px) {
+  .circles :global(.circle) {
+    width: clamp(110px, 50vw, 150px);
+    height: clamp(110px, 50vw, 150px);
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem); /* Increased font size */
+    padding: 0.8rem;
+  }
+
+  .circles {
+    gap: 0.8rem;
+  }
+}

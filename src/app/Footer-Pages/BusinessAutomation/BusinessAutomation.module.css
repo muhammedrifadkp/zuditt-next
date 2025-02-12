@@ -1,0 +1,76 @@
+.container {
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .subTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .serviceList {
+    font-size: 1.1rem;
+    margin-left: 20px;
+  }
+  
+  .serviceList li {
+    margin-bottom: 10px;
+  }
+  
+  .callToAction {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #572204;
+    padding: 2rem;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .callToAction h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .callToAction p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactBtn {
+    background-color: #ffc927;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #572204;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contactBtn:hover {
+    background-color: #f8580d;
+    color: #fff;
+  }
+  
