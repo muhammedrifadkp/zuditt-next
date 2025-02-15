@@ -74,7 +74,7 @@
 
 .pageTitle {
   font-size: 4rem;
-  color: black;
+  color: white;
 
 }
 
@@ -82,7 +82,7 @@
   font-size: 1.4rem;
   font-weight: bold;
   padding: 0 16rem;
-  color: black;
+  color: white;
 
 
 }
@@ -293,175 +293,134 @@
   margin-bottom: 0.5rem;
 } */
 
-@media (max-width: 1600px) {
 
-  .cardSection22
-{
- gap: 8rem;
-  
-}
-.cardTitle2{
-  font-size: 1.8rem;
-}
-
-}
-
-
-@media (max-width: 1350px) {
-  /* .webPage{
-    margin-top: 7rem;
-  } */
-  .pageTitle{
+/* Responsive styles for screens below 1600px */
+@media screen and (max-width: 1600px) {
+  .pageTitle {
     font-size: 3rem;
-    
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+    padding: 0 8rem;
+  }
+
+  .cardSection {
+    padding: 5rem 4rem;
+    gap: 4rem;
+  }
+
+  .cardParagraph {
+    font-size: 1.1rem;
+  }
+
+  .cardImage img {
+    max-width: 500px;
+    height: 375px;
+  }
+
+  .cardSection22 {
+    padding: 6rem 3rem;
+  }
+
+  .technologyItem {
+    width: 250px;
+    padding: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .cardSection2 {
+    gap: 3rem;
+    padding: 4rem;
+  }
+
+  .cardImage2 img {
+    max-width: 600px;
+    height: 400px;
+  }
+
+  .backendList {
+    font-size: 1.1rem;
+  }
+
+  .cardTitle2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+.technologyGrid{
+  padding: 0 1rem;
+}
+.cardSection22{
+  gap: 3rem;
+}
+.cardSection2{
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 850px) {
+  .pageTitle{
+    font-size: 2.5rem;
+    text-align: center ;
+    padding: 0 2rem;
+  }
+  .paragraph{
+    padding: 0 2rem;
+
+  }
+  .cardSection{
+    flex-direction: column;
+
+  
+  }
+  .cardSection22{
+    flex-direction: column;
+
   }
   .cardTitle2{
     font-size: 1.5rem;
   }
-  .paragraph {
-    font-size: 1.1rem;
-  }
-
-  /* .cardSection {
-    padding: 5rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     gap: 10rem; 
-  } */
-
-  .cardSection{
-    /* flex-direction: column; */
-  }
-  /* .backendLists {
-    font-size: 1.1rem;
-  }
-  .cardImage{
-    margin-top: -5rem;
-  }
-   */
-  
-.cardParagraph2 {
-  /* padding-top: 1rem; */
-  /* font-size: 0.1rem;
-  text-align: justify; */
-}
-
-
-.cardSection2{
-  /* display: flex;
-  flex-direction: column; */
-}
-.cardImage2{
-  margin-top: -6rem;
-}
-.cardImage2 img{
-  max-width: 450px;
-  height: auto;
-}
-.cardContent2{
-  margin-top: -8rem;
-  
-}
-.webPage2{
-  /* margin-top: -1rem; */
-}
-
-.technologyGrid{
-  padding: 2rem;
-}
-}
-
-
-@media (max-width: 1185px) {
- 
   .cardSection2{
-    padding-left:2rem;
-    padding-right: 2rem;
-
+    padding: 3rem 2rem;
   }
-}
-
-
-
-@media (max-width: 991px) {
+  .cardImage2 img {
+   padding:  0 4rem;
+   max-width: 400px;
+   height: auto;
   
-  .container {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .cardSection{
-    display: flex;
-    flex-direction: column;
-  }
-  .cardSection img{
-    margin-top: 10%;
-  }
-  .cardSection2{
-    display: flex;
-    flex-direction: column;
-  }
-  .cardContent2{
-    padding-top: 3rem;
-   }
-  .content {
-    padding-right: 0;
-    margin-bottom: 2rem;
   }
 
-  .image {
-    margin-left: 0;
-  }
+
+}
+@media screen and (max-width: 550px) {
+
   .pageTitle{
     font-size: 2rem;
-    
+    padding: 0.1rem;
   }
-  .cardImage2 img{
-    max-width: 900px;
-    height: 400px;
-  }
-  .paragraph {
+  .paragraph{
     font-size: 1rem;
-    padding: 0 1rem;
-
-  }
-  .section{
-    margin: 1rem;
-  }
-}
-
-
-
-@media (max-width: 768px) {
- 
-  .technologyGrid,
-  .backendGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .cardSection2{
-    padding: 5rem 2rem;
-  }
-}
-
-@media (max-width: 480px) {
- 
-  .cardParagraph {
-   
-    font-size: 1rem;
-  }
-  .technologyGrid,
-  .backendGrid {
-    grid-template-columns: 1fr;
-  }
-  .cardImage2 img{
-    max-width: 300px;
-    height: auto;
-  }
-  .technologyItem{
     padding: 1rem;
   }
-
-
-
+  .cardSection
+  {
+  
+      padding: 3rem 2rem;
+    
+    
+    
+  }
+  .cardImage img {
+  
+    height: auto;
+   
+  }
+  .cardImage2 img {
+    padding:  0 4rem;
+    max-width: 350px;
+    height: auto;
+   
+   }
   
 }

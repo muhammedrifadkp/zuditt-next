@@ -42,7 +42,7 @@ const cards = [
     title: "Blockchain Wallet Development",
     description:
       "We provide clients with 100% customizable crptocurrency wallet development solutions developed by a team of passionate blockchain developers.we has been involved in the creation of wallet for DDk that supports multiple cryptocurrencies like DDK, DNC,ETH, BTC, etc. DDK is a strong community of 220,000 stong people.DDK is  a fork of List on Delegated Proof of Stake Technology. ",
-      image: "Block-chain/BlockChain2.jpg"
+      image: "Block-chain/BlockChain2.webp"
   },
   {
     title: "Private Ethereum Blockchain",
@@ -88,7 +88,7 @@ const cards = [
     title: "Hyperledger Implementation ",
     description:
       "We aim at enabling process improvements for your business by developing enterprise applications using Hyperledger. We have a dedicated team of developers who have expertise in blockchain technologies. We will be able to improve your business transaction cycles with Hyperledger platform.",
-    image: "Block-chain/BlockChain6.jpg",
+    image: "Block-chain/BlockChain6.webp",
   },
 
   {
@@ -109,7 +109,7 @@ const cards = [
     title: "NFT Marketplace Development",
     description:
       "Zuditt AI Innovation is adept at development of NFT Marketplace. Such marketplace is utilized by brands to launch exclusive products, artists to showcase their arts, music and video copyrights organization in order to issue copyrights to the buyers.",
-    image: "Block-chain/NFT.webp"
+    image: "Block-chain/NFT.jpg"
   },
 
   

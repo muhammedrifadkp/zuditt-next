@@ -17,7 +17,7 @@ const Leadership = () => {
             <div className={styles.overlay}></div>
           </div>
           <h3 className={styles.leaderName}>Salman Farize</h3>
-          <p className={styles.leaderTitle}>CEO & Founder</p>
+          <p className={styles.leaderTitle}>Founder & CEO</p>
           <p className={styles.leaderBio}>
             Salman Farize, the founder and CEO of Zuditt AI Innovation LLP, is a passionate entrepreneur with a strong background in International Business Management. Originally from Kasaragod, Kerala, Salman has led Zuditt from its roots in India to a global presence.
           </p>

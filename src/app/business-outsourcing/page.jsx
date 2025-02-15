@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 function DigitalMarketing() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 800, // Animation duration in milliseconds
       easing: "ease-in-out", // Easing function
       once: false, // Trigger animation once (when scrolled into view)
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 .mainDiv {
-  padding: 0 10rem;
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,34 +113,110 @@
   background-color: #00a67e;
   color: white;
 }
+/* Responsive Styles */
+
+@media (max-width: 1280px) {
+
+.mainDiv {
+  padding: 0 2rem;
+}
+  /* .description{
+    font-size: 1.3rem;
+
+  } */
+  .productImage {
+    width: 500px;
+    height: 400px;
+  }
+  .knowMoreButton {
+  
+    font-size: 1.1rem;
+   
+  }
+  .previewButton {
+    
+    font-size: 1.1rem;
+    
+    
+  }
+ 
+  .featuresTitle {
+    font-size: 1.2rem;
+  }
+  .featureItem {
+    text-align:left;
+  }
+  
+  
+}
+@media (max-width: 1060px) {
+
+.mainDiv {
+  padding: 0 2rem;
+}
+  .description{
+    font-size: 1.1rem;
+
+  }
+  .productImage {
+    width: 400px;
+    height: 350px;
+  }
+  .knowMoreButton {
+  
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+
+   
+  }
+ 
+ 
+ 
+  
+  
+
+}
+
+@media (max-width: 850px) {
+ .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+   .imageCard,
+  .description {
+    /* width: 100%; */
+    /* max-width: 600px; */
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+  } 
+  .title {
+   
+    font-size: 2.2rem;
+  }
+  
+}
 
 /* Hide features on mobile */
 @media (max-width: 768px) {
   .featuresTitle, .featuresList {
     display: none;
   }
-
-  .author {
-    display: block;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .imageCard,
-  .description {
-    width: 80%;
-    max-width: 600px;
-  }
-  .productImage {
-    width: 100%;
-    height: auto;
+  .title {
+   
+    font-size: 1.8rem;
+ 
   }
   
+}
+
+@media (max-width: 550px) {
+  .productImage {
+    width: 100%;
+    height: 250px;
+  } 
 }
 
 @media (max-width: 480px) {
@@ -154,11 +230,15 @@
   }
 
   .title {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .knowMoreButton {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
+  .imageCard:hover .previewButton {
+    display: none;
+  }
+  
 }

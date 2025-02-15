@@ -95,8 +95,8 @@ align-items: center;
  .quoteButton {
   margin-top: 1rem;
   background: transparent;
-  color: #189D6D;
-  border: 2px solid #189D6D;
+  color: #00a67e;
+  border: 2px solid #00a67e;
   padding: 0.8rem 2rem;
   border-radius: 15px;
   font-size: 1rem;
@@ -104,7 +104,7 @@ align-items: center;
   transition: all 0.3s ease;
  }
  .quoteButton:hover{
-  background-color: #189D6D;
+  background-color: #00a67e;
   color: white;
 
  }

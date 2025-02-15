@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 function DigitalMarketing() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 800, // Animation duration in milliseconds
       easing: "ease-in-out", // Easing function
       once: false, // Trigger animation once (when scrolled into view)
     });
@@ -50,7 +50,7 @@ function DigitalMarketing() {
             </p>
           </div>
           <div className={styles.cardImage}>
-            <img src="/LogoDesignBranding/logo.webp" alt="SEO Optimization" />
+            <img src="/LogoDesignBranding/logo.jpg" alt="SEO Optimization" />
           </div>
         </div>
 <div className={styles.cardsection11}>
@@ -84,12 +84,12 @@ function DigitalMarketing() {
         </div>
         </div>
 
-        <div className={styles.cardSection22} data-aos="fade-up">
-          <div className={styles.cardImage}>
-            <img src="/LogoDesignBranding/brand.webp" alt="SEO Optimization" />
+        <div className={styles.cardSection22}  data-aos="fade-up">
+          <div className={styles.cardImage}  >
+            <img src="/LogoDesignBranding/brand.jpg" alt="SEO Optimization" />
           </div>
           <div className={styles.cardContent}>
-            <p className={styles.cardParagraph}>
+            <p className={styles.cardParagraph}  data-aos="fade-left">
               We make captivating brand identities that inspire and engage at
               Zuditt AI Innovation. From logos, brand strategy, social media
               branding, to marketing collateral, we ensure that the design is

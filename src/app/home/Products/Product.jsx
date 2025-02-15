@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 function Product() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: "ease-in-out",
       once: false,
     });
@@ -29,7 +29,7 @@ function Product() {
         "Multi-user support for team collaboration",
         "Detailed analytics to track performance",
       ],
-      author: "John Doe, CEO at Zuditt",
+      // author: "John Doe, CEO at Zuditt",
       link: "https://zudittcrm.in/",
       previewLink: "https://zudittcrm.in/",
       imagePosition: "left",
@@ -46,7 +46,7 @@ function Product() {
         "Advanced reporting and analytics",
         "Seamless integration with CRM platforms",
       ],
-      author: "Jane Smith, CTO at Zuditt",
+      // author: "Jane Smith, CTO at Zuditt",
       link: "https://zudittbpo.com/",
       previewLink: "https://zudittbpo.com/",
       imagePosition: "right",
@@ -57,7 +57,7 @@ function Product() {
     <div className={styles.mainDiv}>
       {products.map((product, index) => (
         <div key={index}>
-          <div className={styles.title} data-aos="fade-left">{product.title}</div>
+          <div className={styles.title} >{product.title}</div>
           <br /><br />
           <div
             className={`${styles.cards} ${
@@ -88,9 +88,9 @@ function Product() {
                   </li>
                 ))}
               </ul>
-              <div className={styles.author}>
+              {/* <div className={styles.author}>
                 Author: {product.author}
-              </div>
+              </div> */}
               <a href={product.link}>
                 <button className={styles.knowMoreButton}>Know more</button>
               </a>

@@ -28,15 +28,15 @@ const AboutUs = () => {
       <div className={styles.mainAbout}>
         <div
           className={styles.aboutPage1} 
-          style={{
-            backgroundImage: "url('/aboutus/aboutBg.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            backgroundBlendMode: "multiply",
-            height: "93vh",
-          }}
+          // style={{
+          //   backgroundImage: "url('/aboutus/aboutBg.webp')",
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center",
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundColor: "rgba(0, 0, 0, 0.8)",
+          //   backgroundBlendMode: "multiply",
+          //   height: "93vh",
+          // }}
         >
           <div className={styles.stageContainer}>
             <div className={styles.stage2}>
@@ -57,7 +57,7 @@ const AboutUs = () => {
                 </h2>
                 <div className={styles.imageWrapper}>
                   <img
-                    src="aboutus/group-positive-young-people-posing-together.jpg"
+                    src="/aboutus/group-positive-young-people-posing-together.webp"
                     alt="Team"
                     className={`${styles.stage2Image} ${
                       animateImage2 ? styles.animate : ""
@@ -73,18 +73,18 @@ const AboutUs = () => {
           <div className={styles.contentWrapper}>
             <h1
               className={styles.mainTitle}
-              data-aos="flip-up"
-              data-aos-duration="1000"
-              data-aos-delay={100}
+              // data-aos="flip-up"
+              // data-aos-duration="1000"
+              // data-aos-delay={100}
             >
               Get to know us
             </h1>
 
             <h3
               className={styles.subtitle1}
-              data-aos="fade-in"
-              data-aos-duration="1000"
-              data-aos-delay={150}
+              // data-aos="fade-in"
+              // data-aos-duration="1000"
+              // data-aos-delay={150}
             >
               Empowering Businesses Through AI and Innovation
             </h3>
@@ -283,17 +283,17 @@ const AboutUs = () => {
         >
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <h1>00</h1>
+              <h1>350+</h1>
               <p>HAPPY CUSTOMER</p>
             </div>
             <div className={styles.divider} />
             <div className={styles.stat}>
-              <h1>00</h1>
+              <h1>120+</h1>
               <p>PROJECTS</p>
             </div>
             <div className={styles.divider} />
             <div className={styles.stat}>
-              <h1>00</h1>
+              <h1>4.9/5</h1>
               <p>REVIEW RATE</p>
             </div>
           </div>

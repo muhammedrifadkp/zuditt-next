@@ -6,6 +6,10 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 const testimonials = [
   {
     id: 1,
@@ -43,6 +47,20 @@ const Testimonials = () => {
     setPlaying(true);
   };
 
+
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
   return (
     <section className={styles.testimonials}>
       <div className={styles.container}>
@@ -74,7 +92,7 @@ const Testimonials = () => {
             )}
           </div>
 
-          <div className={styles.testimonialAvatars}>
+          <div className={styles.testimonialAvatars} data-aos="fade-down">
             {['/testimonials/avatar1.jpg', '/testimonials/avatar2.jpg', '/testimonials/avatar3.jpg', '/testimonials/avatar4.webp'].map((avatar, index) => (
               <div
                 key={index}

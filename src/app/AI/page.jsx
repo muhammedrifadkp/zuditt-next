@@ -26,7 +26,7 @@ const cards = [
     title: " Gaming  development",
     description:
       "Game development is the process of designing, coding, and creating interactive digital experiences. It involves game engines like Unity and Unreal Engine for graphics, physics, and mechanics. Developers work on gameplay, AI, storytelling, and multiplayer features. The industry spans mobile, PC, console, and VR gaming platforms.",
-    image: "AI/GAME-DEVELOPMENT.jpg",
+    image: "AI/GAME-DEVELOPMENT.webp",
   },
   {
     title: "Robotic process automation",

@@ -254,12 +254,28 @@
   }
   
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
 
   }
   
   @media (max-width: 650px) {
+    .testimonials {
+      padding: 5rem 2rem;
+   
+    }
+    
     .testimonialAvatars{
       display: none;
     }
+     
+  .statValue {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00a67e;
+  }
+  
+  .statLabel {
+    font-size: 1rem;
+    color: #666;
+  }
   }

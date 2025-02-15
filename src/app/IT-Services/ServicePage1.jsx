@@ -44,14 +44,16 @@ const services = [
 ];
 
 function ServicePage1() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out-sine",
-      offset: 200,
-      delay: 100,
-    });
-  }, []);
+
+
+   useEffect(() => {
+      AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+        easing: "ease-in-out-sine", // Easing style
+        offset: 200, // Trigger offset in pixels
+        delay: 100, // Delay before animation starts
+      });
+    }, []);
 
   return (
     <div className={styles.container}>
