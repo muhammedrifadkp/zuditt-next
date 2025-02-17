@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer /> {/* Render Footer at the bottom */}
         <a
-          href="https://wa.me/919994455667" // Replace with your WhatsApp number
+          href="https://wa.me/917994730307" // Replace with your WhatsApp number
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-icon"

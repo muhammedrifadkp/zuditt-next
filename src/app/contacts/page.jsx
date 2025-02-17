@@ -19,10 +19,10 @@ const Contact = () => {
     console.log('Form submitted:', formData);
     emailjs
     .sendForm(
-      'service_jrv08ef', // Replace with your Service ID
-      'template_tyf573q', // Replace with your Template ID
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, // Use environment variable
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Use environment variable
       e.target, // This automatically binds the form data
-      'pFlTcq_JAtYnEqsJ-' // Replace with your Public Key (API Key)
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Use environment variable
     )
     .then(
       (result) => {
@@ -84,7 +84,7 @@ const Contact = () => {
             </a>
             
             <a
-              href="https://wa.me/919994455667" // Replace with your WhatsApp number
+              href="https://wa.me/917994730307" // Replace with your WhatsApp number
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}

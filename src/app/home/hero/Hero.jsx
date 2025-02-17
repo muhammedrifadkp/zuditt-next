@@ -31,7 +31,7 @@ const Hero = () => {
           <h2 className={styles.subtitle}>LLP</h2>
           <p className={styles.description}>Get a quote or set up a consultation.</p>
 
-          <a href="https://wa.me/919994455667" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/917994730307" target="_blank" rel="noopener noreferrer">
             <button className={styles.ctaButton}>Get a quote</button>
           </a>
         </div>
