@@ -71,7 +71,7 @@ const Footer = () => {
             <p>KMC 18 - 289 D City Mall Building, MG Road, Kasaragod, Kerala, India</p>
             <p>Office Timing: Mon-Sat</p>
             <p>9.00 AM - 6.00 PM</p>
-            <p>India Contact Number: +91 [Your Contact Number]</p>
+            <p>India Contact Number: +91 7994730307</p>
           </div>
         </div>
 
