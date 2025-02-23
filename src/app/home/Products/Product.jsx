@@ -88,9 +88,7 @@ function Product() {
                   </li>
                 ))}
               </ul>
-              <div className={styles.author}>
-                Author: {product.author}
-              </div>
+             
               <a href={product.link}>
                 <button className={styles.knowMoreButton}>Know more</button>
               </a>
