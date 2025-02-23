@@ -36,7 +36,7 @@ function Product() {
     },
     {
       title: "OUR BPO SERVICES",
-      imageSrc: "/bpo1.png",
+      imageSrc: "/HomeBpo/bpoHome.webp",
       altText: "BPO Software",
       description:
         "At Zuditt AI Innovations LLP, we offer end-to-end BPO solutions to help businesses enhance productivity, reduce operational costs, and focus on core business functions. Our team ensures efficiency, accuracy, and customer satisfaction with a wide range of outsourcing services.",
