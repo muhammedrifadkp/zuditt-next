@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 function Product() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       easing: "ease-in-out",
       once: false,
     });
@@ -29,24 +29,26 @@ function Product() {
         "Multi-user support for team collaboration",
         "Detailed analytics to track performance",
       ],
-      // author: "John Doe, CEO at Zuditt",
+      author: "John Doe, CEO at Zuditt",
       link: "https://zudittcrm.in/",
       previewLink: "https://zudittcrm.in/",
       imagePosition: "left",
     },
     {
-      title: "OUR BPO SOFTWARE",
-      imageSrc: "/HomeBpo/bpoHome.webp",
+      title: "OUR BPO SERVICES",
+      imageSrc: "/bpo1.png",
       altText: "BPO Software",
       description:
-        "Our BPO software is a cutting-edge solution designed to streamline business process outsourcing operations. It offers robust tools for workforce management, task automation, and detailed reporting, enabling organizations to deliver exceptional service to their clients.",
+        "At Zuditt AI Innovations LLP, we offer end-to-end BPO solutions to help businesses enhance productivity, reduce operational costs, and focus on core business functions. Our team ensures efficiency, accuracy, and customer satisfaction with a wide range of outsourcing services.",
       features: [
-        "Comprehensive workforce management",
-        "Automated task assignment and tracking",
-        "Advanced reporting and analytics",
-        "Seamless integration with CRM platforms",
+        "Customer Support & Call Center Services: 24/7 inbound & outbound support, live chat, email, and phone assistance, complaint resolution & customer retention.",
+        "Lead Generation & Telemarketing: Cold calling & appointment scheduling, sales & product promotions, market research & survey calls.",
+        "Data Entry & Processing: Form filling & document verification, data cleansing & management, fast & accurate processing services.",
+        "Virtual Assistance & Back-Office Support: Administrative tasks & email management, order & inventory management, HR & payroll outsourcing.",
+        "IT Helpdesk & Technical Support: Remote troubleshooting & software assistance, IT infrastructure monitoring, multi-platform technical support.",
+        "Finance & Accounting Services: Bookkeeping & invoice processing, payroll management, tax & financial reporting.",
       ],
-      // author: "Jane Smith, CTO at Zuditt",
+      author: "Jane Smith, CTO at Zuditt",
       link: "https://zudittbpo.com/",
       previewLink: "https://zudittbpo.com/",
       imagePosition: "right",
@@ -57,14 +59,14 @@ function Product() {
     <div className={styles.mainDiv}>
       {products.map((product, index) => (
         <div key={index}>
-          <div className={styles.title} >{product.title}</div>
+          <div className={styles.title} data-aos="fade-up">{product.title}</div>
           <br /><br />
           <div
             className={`${styles.cards} ${
               product.imagePosition === "right" ? styles.rowReverse : ""
-            }`}  
+            }`}
           >
-            <div className={styles.imageCard}  data-aos="fade-right" >
+            <div className={styles.imageCard} data-aos="fade-right">
               <button
                 className={styles.previewButton}
                 onClick={() => window.open(product.previewLink, "_blank")}
@@ -77,7 +79,7 @@ function Product() {
                 className={styles.productImage}
               />
             </div>
-            <div className={styles.description}  data-aos="fade-right">
+            <div className={styles.description} data-aos="fade-left">
               <div className={styles.text}>{product.description}</div>
               <br />
               <div className={styles.featuresTitle}>Features:</div>
@@ -88,15 +90,14 @@ function Product() {
                   </li>
                 ))}
               </ul>
-              {/* <div className={styles.author}>
+              <div className={styles.author}>
                 Author: {product.author}
-              </div> */}
+              </div>
               <a href={product.link}>
                 <button className={styles.knowMoreButton}>Know more</button>
               </a>
             </div>
           </div>
-         
         </div>
       ))}
     </div>
