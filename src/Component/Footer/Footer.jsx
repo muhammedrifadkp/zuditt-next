@@ -19,7 +19,7 @@ const Footer = () => {
             <h2 className={styles.title}>Get Newsletter</h2>
             <div className={styles.content}>
               <p className={styles.description}>
-                Stay updated with the latest news, trends, and services from Zuditt Ai Innovation.
+                Stay updated with the latest news, trends, and services from Zuditt Ai Innovations LLP.
               </p>
               <div className={styles.inputGroup}>
                 <input
@@ -71,12 +71,24 @@ const Footer = () => {
             <p>KMC 18 - 289 D City Mall Building, MG Road, Kasaragod, Kerala, India</p>
             <p>Office Timing: Mon-Sat</p>
             <p>9.00 AM - 6.00 PM</p>
+            <p>India Contact Number: +91 [Your Contact Number]</p>
           </div>
+        </div>
+
+        {/* Policy and Terms Section */}
+        <div className={styles.section}>
+          <h3>Policies</h3>
+          <p>
+            Kindly update the website with the below policy, Terms and Conditions, Privacy, Refunds/Cancellations: 
+            Kindly align the Refund policy, Pricing, Shipping policy (Minimum and Maximum timeline). 
+            Contact Us: Must have India contact number and operating address. 
+            Also, update the website with the business name "Zuditt Ai Innovations LLP" to proceed further. Thank you.
+          </p>
         </div>
 
         {/* Footer Bottom */}
         <div className={styles.bottom}>
-          <p className={styles.copyright}>Zuditt Ai Innovation LLP 2024 © All Rights Reserved | Powered by MCA</p>
+          <p className={styles.copyright}>Zuditt Ai Innovations LLP 2024 © All Rights Reserved | Powered by MCA</p>
           <p className={styles.copyright}>Company Number Reg ACI-8001</p>
         </div>
       </div>

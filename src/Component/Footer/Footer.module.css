@@ -5,11 +5,17 @@
   background-position: center;
   color: white;
   padding: 1rem 1rem 1rem;
+  height: 120vh; /* Set fixed height to 120vh */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  padding: 2rem 0; /* Add padding to container */
 }
 
 .newsletter {
@@ -19,10 +25,10 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem; /* Adjusted font size */
   font-weight: 900;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Adjusted margin */
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -30,16 +36,16 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.5rem; /* Adjusted padding */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem; /* Adjusted gap */
 }
 
 .description {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Adjusted font size */
   max-width: 400px;
 }
 
@@ -51,15 +57,15 @@
 
 .input {
   flex: 1;
-  padding: 1rem;
+  padding: 0.8rem; /* Adjusted padding */
   border: none;
   border-radius: 5px;
   background: white;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjusted font size */
 }
 
 .subscribeBtn {
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem; /* Adjusted padding */
   background: #00a67e;
   color: white;
   border: none;
@@ -67,6 +73,7 @@
   cursor: pointer;
   font-weight: 500;
   transition: background 0.3s;
+  font-size: 0.9rem; /* Adjusted font size */
 }
 
 .subscribeBtn:hover {
@@ -76,26 +83,28 @@
 .sections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  margin-bottom: 4rem;
+  gap: 2rem; /* Adjusted gap */
+  margin-bottom: 2rem; /* Adjusted margin */
 }
 
 .section h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Adjusted font size */
   margin-bottom: 1rem;
 }
 
 .section p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Adjusted margin */
   color: white;
+  line-height: 1.6;
 }
 
 .section nav a {
   display: block;
   color: #ffffff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Adjusted margin */
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 0.9rem; /* Adjusted font size */
 }
 
 .section nav a:hover {
@@ -103,14 +112,14 @@
 }
 
 .socialLinks {
-  margin-top: 1.5rem;
+  margin-top: 1rem; /* Adjusted margin */
   display: flex;
   gap: 1rem;
 }
 
 .socialLinks a {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Adjusted font size */
   transition: color 0.3s ease;
 }
 
@@ -121,8 +130,8 @@
 .bottom {
   text-align: center;
   border-top: 1px solid #333;
-  padding-top: 2rem;
-  font-size: 0.9rem;
+  padding-top: 1.5rem; /* Adjusted padding */
+  font-size: 0.8rem; /* Adjusted font size */
   color: white;
 }
 
@@ -132,8 +141,13 @@
 
 /* Media Queries for Mobile and Tablet Views */
 @media (max-width: 1024px) {
+  .footer {
+    height: auto; /* Reset height for smaller screens */
+    padding: 2rem 1rem; /* Adjust padding */
+  }
+
   .title {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Adjusted font size */
   }
 
   .content {
@@ -148,60 +162,60 @@
 
   .sections {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem; /* Adjusted gap */
   }
 
   .section h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem; /* Adjusted font size */
   }
 
   .section p {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Adjusted font size */
   }
 
   .section nav a {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Adjusted font size */
   }
 
   .socialLinks a {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjusted font size */
   }
 }
 
 @media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted font size */
   }
 
   .sections {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem; /* Adjusted gap */
   }
 
   .section h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Adjusted font size */
   }
 
   .section p {
-    font-size: 0.8rem;
+    font-size: 0.7rem; /* Adjusted font size */
   }
 
   .section nav a {
-    font-size: 0.8rem;
+    font-size: 0.7rem; /* Adjusted font size */
   }
 
   .socialLinks a {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjusted font size */
   }
 
   .bottom {
-    font-size: 0.8rem;
+    font-size: 0.7rem; /* Adjusted font size */
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Adjusted font size */
   }
 
   .content {
@@ -209,40 +223,40 @@
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjusted font size */
   }
 
   .input {
-    padding: 0.8rem;
-    font-size: 0.9rem;
+    padding: 0.7rem; /* Adjusted padding */
+    font-size: 0.8rem; /* Adjusted font size */
   }
 
   .subscribeBtn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem; /* Adjusted padding */
+    font-size: 0.8rem; /* Adjusted font size */
   }
 
   .sections {
-    gap: 1rem;
+    gap: 0.8rem; /* Adjusted gap */
   }
 
   .section h3 {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjusted font size */
   }
 
   .section p {
-    font-size: 0.7rem;
+    font-size: 0.6rem; /* Adjusted font size */
   }
 
   .section nav a {
-    font-size: 0.7rem;
+    font-size: 0.6rem; /* Adjusted font size */
   }
 
   .socialLinks a {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Adjusted font size */
   }
 
   .bottom {
-    font-size: 0.7rem;
+    font-size: 0.6rem; /* Adjusted font size */
   }
 }

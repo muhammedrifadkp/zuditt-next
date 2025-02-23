@@ -35,7 +35,7 @@ function Product() {
       imagePosition: "left",
     },
     {
-      title: "OUR BPO SOFTWARE",
+      title: "OUR BPO SERVICES",
       imageSrc: "/bpo1.png",
       altText: "BPO Software",
       description:
@@ -102,5 +102,3 @@ function Product() {
     </div>
   );
 }
-
-export default Product;
