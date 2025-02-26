@@ -44,6 +44,10 @@ const Footer = () => {
               <Link href="/Footer-Pages/PrivacyPolicy" onClick={scrollToTop}>Privacy policy</Link>
               <Link href="/Footer-Pages/Careers" onClick={scrollToTop}>Careers</Link>
               <Link href="/Footer-Pages/TermsConditions" onClick={scrollToTop}>Terms conditions</Link>
+              {/* Add Cancellation and Refund Policy Link */}
+              <Link href="/Footer-Pages/CancellationRefundPolicy" onClick={scrollToTop}>Cancellation and Refund Policy</Link>
+              {/* Add Shipping Policy Link */}
+              <Link href="/Footer-Pages/ShippingPolicy" onClick={scrollToTop}>Shipping Policy</Link>
             </nav>
             <div className={styles.socialLinks}>
               <a href="https://www.facebook.com/profile.php?id=61563675530112&mibextid=kFxxJD" onClick={scrollToTop}><FaFacebookF /></a>
@@ -73,17 +77,6 @@ const Footer = () => {
             <p>9.00 AM - 6.00 PM</p>
             <p>India Contact Number: +91 7994730307</p>
           </div>
-        </div>
-
-        {/* Policy and Terms Section */}
-        <div className={styles.section}>
-          <h3>Policies</h3>
-          <p>
-            Kindly update the website with the below policy, Terms and Conditions, Privacy, Refunds/Cancellations: 
-            Kindly align the Refund policy, Pricing, Shipping policy (Minimum and Maximum timeline). 
-            Contact Us: Must have India contact number and operating address. 
-            Also, update the website with the business name "Zuditt Ai Innovations LLP" to proceed further. Thank you.
-          </p>
         </div>
 
         {/* Footer Bottom */}
