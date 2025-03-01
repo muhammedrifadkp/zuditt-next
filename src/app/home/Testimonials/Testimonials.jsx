@@ -13,22 +13,22 @@ import { useEffect } from 'react';
 const testimonials = [
   {
     id: 1,
-    name: 'Anjali Nair',
-    image: '/testimonials/person1.jpg',
+    companyName: 'Bronuts Dates & Nuts',
+    logo: '/testimonials/bronuts.jpg', // Replace with the actual path to the logo
     text: 'Amazing experience with the team! They understood our requirements and delivered an outstanding website on time.',
     rating: 5,
   },
   {
     id: 2,
-    name: 'Vishnu Pillai',
-    image: '/testimonials/avatar1.jpg',
+    companyName: 'ATC',
+    logo: '/testimonials/atc.jpg', // Replace with the actual path to the logo
     text: 'The team was fantastic in executing our vision. The website is user-friendly and aesthetically pleasing.',
     rating: 4,
   },
   {
     id: 3,
-    name: 'Radhika Menon',
-    image: '/testimonials/person3.jpg',
+    companyName: 'LI Life Style',
+    logo: '/testimonials/lifestylelogo.jpg', // Replace with the actual path to the logo
     text: 'Excellent service! They took our feedback seriously and created a website that we’re proud of. Truly professional and reliable!',
     rating: 5,
   },
@@ -47,8 +47,6 @@ const Testimonials = () => {
     setPlaying(true);
   };
 
-
-  
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -131,9 +129,9 @@ const Testimonials = () => {
             <SwiperSlide key={testimonial.id}>
               <div className={styles.testimonialCard}>
                 <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className={styles.testimonialImage}
+                  src={testimonial.logo}
+                  alt={testimonial.companyName}
+                  className={styles.companyLogo}
                 />
                 <p className={styles.testimonialText}>{testimonial.text}</p>
                 <div className={styles.stars}>
@@ -141,7 +139,7 @@ const Testimonials = () => {
                     <FaStar key={i} className={styles.star} />
                   ))}
                 </div>
-                <h3 className={styles.testimonialName}>{testimonial.name}</h3>
+                <h3 className={styles.companyName}>{testimonial.companyName}</h3>
               </div>
             </SwiperSlide>
           ))}
