@@ -46,7 +46,7 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <div className={`${styles.bottomNav} ${styles.desktopNav}`}>
         <Link href="/" className={styles.logoContainer}>
-          <img src="/zuditt-logo.png" alt="Logo" className={styles.logo} />
+          <img src="/zudit-new-logo.png" alt="Logo" className={styles.logo} />
         </Link>
 
         <div className={styles.navLinks}>
